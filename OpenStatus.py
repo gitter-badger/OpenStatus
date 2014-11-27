@@ -1,12 +1,15 @@
 'OpenStatus - Backend to the OpenStatus decentralized social network.'
 'GNU GPL v3.0 '
 
+import datetime
+import os
+
 class user():
-    name_raw = open("homedir/.OpenStatus/config/name", "r")
-    name = name_raw.read()
+    name_raw = open(os.environ("HOME") + "/.OpenStatus/config.txt", "r")
+    name = name_raw.readline(1).strip("name=")
     name_raw.close()
     def current_time():
-        return datetime
+        return str(datetime.time.hour) + ":" + str(datetime.time.minute) + ":" + str(datetime.time.second)
 
 class generator():
     def generate_post(content):
