@@ -15,10 +15,10 @@ class timestamper():
 
 class timeline():
     def retrieve():
+        'Retrieve the full timeline.'
         return open("/var/OpenStatus/serve/stream.txt", "r").readlines()
 
     def post(content):
+        'Post text specified by "content" to the public timeline.'
         writer = open("/var/OpenStatus/serve/stream.txt", "a").write(timestamper.stamp + content)
         writer.close()
-
-    def
