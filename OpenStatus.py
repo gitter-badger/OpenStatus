@@ -9,16 +9,16 @@ class user():
     def current_time():
         return str(datetime.time.hour) + ":" + str(datetime.time.minute) + ":" + str(datetime.time.second)
 
-class generator():
-    def generate_post(content):
-        return "[" + user.current_time() + "||" + user.name + "] " + content
+class timestamper():
+    def stamp():
+        return "[" + user.current_time() + "||" + user.name + "] "
 
 class timeline():
     def retrieve():
         return open("/var/OpenStatus/serve/stream.txt", "r").readlines()
-    
+
     def post(content):
-        writer = open("/var/OpenStatus/serve/stream.txt", "a").write(generator.generate_post(content))
+        writer = open("/var/OpenStatus/serve/stream.txt", "a").write(timestamper.stamp + content)
         writer.close()
-    
-    def 
+
+    def
