@@ -22,3 +22,7 @@ class timeline():
         'Post text specified by "content" to the public timeline.'
         writer = open("/var/OpenStatus/serve/stream.txt", "a").write(timestamper.stamp + content)
         writer.close()
+
+user = user()
+timesteamper = timestamper()
+timeline = timeline()
