@@ -1,5 +1,5 @@
 'OpenStatus - Backend to the OpenStatus decentralized social network.'
-'GNU GPL v3.0 - <httP;//gnu.org/licenses/gpl.txt>'
+'GNU GPL v3.0 - <http://gnu.org/licenses/gpl.txt>'
 
 import datetime
 import os
