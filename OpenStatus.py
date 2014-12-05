@@ -4,11 +4,7 @@
 import datetime
 import os
 
-class user():
-    'Get the currently logged in user"s OpenStatus name.'
-    name = open(os.environ("HOME") + "/.OpenStatus/config.txt", "r").readline(0).strip("name=")
-    def current_time():
-        return str(datetime.time.hour) + ":" + str(datetime.time.minute) + ":" + str(datetime.time.second)
+class user()
     class name():
         def change_name(name):
             writer = open(os.environ("HOME") + "/.OpenStatus/config.txt", "w").write("name=" + name)
@@ -16,13 +12,12 @@ class user():
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return name = open(os.environ("HOME") + "/.OpenStatus/config.txt", "r").readline(0).strip("name=")
-
     name = name()
 
 class timestamper():
     def stamp():
         'Create a timestapmp and return it to the user.'
-        return "[" + user.current_time() + "||" + user.name + "] "
+        return "[" + str(datetime.time.hour) + ":" + str(datetime.time.minute) + ":" + str(datetime.time.second) + "||" + user.name.get_name + "] "
 
 class timeline():
     def retrieve():
