@@ -3,6 +3,10 @@
 
 import datetime
 
+class info():
+    def get_version():
+        return "1.0.0.0"
+
 class user()
     class name():
         'Methods and funtions related to operating with the OpenStatus user"s username.'
@@ -44,6 +48,7 @@ class timeline():
         writer = open("~.config/OpenStatus/stream/stream.txt", "a").write(timestamper.stamp + content)
         writer.close()
 
+info = info()
 user = user()
 timesteamper = timestamper()
 timeline = timeline()
