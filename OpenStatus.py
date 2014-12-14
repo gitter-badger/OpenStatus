@@ -4,6 +4,7 @@
 import datetime
 
 class info():
+    'Methods and funtions related to the OpenStatus backend/library itself.'
     def get_version():
         return "1.0.0.0"
 
