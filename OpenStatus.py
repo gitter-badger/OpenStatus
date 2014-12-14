@@ -17,7 +17,7 @@ class user():
             writer.close()
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
-            return name = open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
+            return open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
     
     def get_mentions():
         'Create a counter.'
