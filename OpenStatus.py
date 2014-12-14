@@ -7,7 +7,7 @@ class info():
     def get_version():
         return "1.0.0.0"
 
-class user()
+class user():
     class name():
         'Methods and funtions related to operating with the OpenStatus user"s username.'
 
