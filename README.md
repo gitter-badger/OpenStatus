@@ -7,4 +7,4 @@ OpenStatus backend written in Python.
 
 ##Manifestos
 
-####1. [OpenStatus FileSystem](https://github.com/OpenStatus/OpenStatus/blob/master/filesystem.md)
+####1. [OpenStatus FileSystem](https://github.com/OpenStatus/OpenStatus/blob/master/filesystem.md) - _The storage layout of OpenStatus._
