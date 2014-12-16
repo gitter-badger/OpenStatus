@@ -19,14 +19,14 @@ class user():
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
-
-    def get_mentions():
-        'Create a counter.'
-        mentions_count = 0
-        for posts in timeline.retrieve():
-            if "@" + user.get_name() in posts:
-                mentions_count = mentions_count + 1
-        return mentions_count
+    class mentions():
+        def get_count():
+            'Create a counter.'
+            mentions_count = 0
+            for posts in timeline.retrieve():
+                if "@" + user.get_name() in posts:
+                    mentions_count = mentions_count + 1
+                    return mentions_count
 
     name = name()
 
