@@ -21,3 +21,4 @@ Below we explain the above diagram.
 
 1. The `.config/OpenStatus` folder is a directory that holds everything for OpenStatus in terms of information, not the binaries and libraries though.
 2. The sub-directory `--config` is a sub-directory of `.config/OpenStatus`, it holds the configuration files for your OpenStatus installation.
+3. The sub-directory `--network` is a sub-directory of `.config/OpenStatus`, it holds all the network files that are getting synced by [**Syncthing**](http://syncthing.net) to your machine.
