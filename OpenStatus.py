@@ -60,7 +60,7 @@ class timeline():
         writer.close()
 
     class DynamicShift():
-        'Put integer here containing the heap size not in dissk size space but in lenghth of cahracters.''
+        'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
         def check_if_needed():
             if len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
