@@ -56,6 +56,8 @@ class timeline():
             if len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
                 'Do archiving here'
 
+    DynamicShift = DynamicShift()
+
 info = info()
 user = user()
 timesteamper = timestamper()
