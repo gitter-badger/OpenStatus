@@ -21,14 +21,24 @@ class user():
             return open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
     class mentions():
         def get_count():
+            'Get the number of mentions.'
             'Create a counter.'
             mentions_count = 0
             for posts in timeline.retrieve():
                 if "@" + user.get_name() in posts:
                     mentions_count = mentions_count + 1
                     return mentions_count
+        def get_mentions():
+            'Get all the mentions as a list.'
+            'Create a counter.'
+            mentions_count = 0
+            for posts in timeline.retrieve():
+                mentions_count = mentions_count + 1
+                if "@" + user.get_name() in posts:
+                    return posts
 
     name = name()
+    mentions = mentions()
 
 class timestamper():
     'Funtions realted to operating with the timestamping system.'
