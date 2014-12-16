@@ -14,11 +14,11 @@ class user():
 
         def change_name(name):
             'Change the username of the OpenStatus user of the system"s currently logged in user.'
-            writer = open("~.config/OpenStatus/config.txt", "w").write("name=" + name)
+            writer = open("~.config/OpenStatus/config/config.txt", "w").write("name=" + name)
             writer.close()
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
-            return open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
+            return open("~.config/OpenStatus/config/config.txt", "r").readline(0).strip("name=")
     class mentions():
         def get_count():
             'Get the number of mentions.'
@@ -52,18 +52,18 @@ class timeline():
 
     def retrieve():
         'Retrieve the full timeline.'
-        return open("~.config/OpenStatus/stream/stream.txt", "r").readlines()
+        return open("~.config/OpenStatus/network/timeline/default", "r").readlines()
 
     def post(content):
         'Post text specified by "content" to the public timeline.'
-        writer = open("~.config/OpenStatus/stream/stream.txt", "a").write(timestamper.stamp + content)
+        writer = open("~.config/OpenStatus/network/timeline/default", "a").write(timestamper.stamp + content)
         writer.close()
 
     class DynamicShift():
         'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
         def check_if_needed():
-            if len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
+            if len(open("~.config/OpenStatus/network/timeline/default.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
                 'Do archiving here'
 
     DynamicShift = DynamicShift()
