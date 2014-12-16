@@ -19,7 +19,7 @@ class user():
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return open("~.config/OpenStatus/config.txt", "r").readline(0).strip("name=")
-    
+
     def get_mentions():
         'Create a counter.'
         mentions_count = 0
@@ -32,7 +32,7 @@ class user():
 
 class timestamper():
     'Funtions realted to operating with the timestamping system.'
-    
+
     def stamp():
         'Create a timestapmp and return it to the user.'
         return "[" + str(datetime.time.hour) + ":" + str(datetime.time.minute) + ":" + str(datetime.time.second) + "||" + user.name.get_name + "] "
@@ -48,6 +48,13 @@ class timeline():
         'Post text specified by "content" to the public timeline.'
         writer = open("~.config/OpenStatus/stream/stream.txt", "a").write(timestamper.stamp + content)
         writer.close()
+
+    class DynamicShift():
+        'Put integer here containing the heap size not in dissk size space but in lenghth of cahracters.''
+        heap_size = 0
+        def check_if_needed():
+            if len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
+                'Do archiving here'
 
 info = info()
 user = user()
