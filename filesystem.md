@@ -11,8 +11,8 @@ Below is a text made diagram made to explain and show the layout of the **OpenSt
 + .config/OpenStatus
 +   --config
 +     --config/config.txt
-+ --network
-+   --network/default.txt
++   --network
++     --network/default.txt
 ````
 
 ###Explanation
