@@ -88,6 +88,8 @@ class timeline():
         writer.close()
 
     class DynamicShift():
+        'Methods related to operating with the Dynamic-Shift system.'
+        
         'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
         def check_if_needed():
