@@ -10,7 +10,7 @@ class info():
 
 class user():
     'Classes to do with the user.'
-    
+
     class name():
         'Methods and funtions related to operating with the OpenStatus user"s username.'
 
@@ -51,17 +51,17 @@ class user():
             'Create a counter.'
             hashtags_count = 0
             for posts in timeline.retrieve():
-                if hashtag in posts:
+                if user.hashtags.hashtag in posts:
                     hashtags_count = hashtags_count + 1
                     return hashtags_count
 
-        def get_hashtags(hashtag):
+        def get_hashtags(user.hashtags.hashtag):
             'Get all the mentions as a list.'
             'Create a counter.'
             hashtags_count = 0
             for posts in timeline.retrieve():
                 hashtags_count = hashtags_count + 1
-                if hashtag in posts:
+                if user.hashtags.hashtag in posts:
                     return posts
 
     hashtags = hashtags()
