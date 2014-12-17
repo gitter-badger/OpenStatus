@@ -4,6 +4,10 @@
 import datetime
 import os
 
+class environment():
+    config = "~.config/OpenStatus/config/config.txt"
+    active_timeline = "~.config/OpenStatus/network/timeline/default.txt"
+
 class info():
     'Methods and funtions related to the OpenStatus backend/library itself.'
     def get_version():
@@ -17,12 +21,12 @@ class user():
 
         def change_name(name):
             'Change the username of the OpenStatus user of the system"s currently logged in user.'
-            writer = open("~.config/OpenStatus/config/config.txt", "w").write("name=" + name)
+            writer = open(env.config, "w").write("name=" + name)
             writer.close()
 
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
-            return open("~.config/OpenStatus/config/config.txt", "r").readline(0).strip("name=")
+            return open(env.config, "r").readline(0).strip("name=")
 
     class mentions():
         'Funtions related to operating with the mentions system.'
@@ -82,11 +86,11 @@ class timeline():
 
     def retrieve():
         'Retrieve the full timeline.'
-        return open("~.config/OpenStatus/network/timeline/default", "r").readlines()
+        return open(env.active_timeline, "r").readlines()
 
     def post(content):
         'Post text specified by "content" to the public timeline.'
-        writer = open("~.config/OpenStatus/network/timeline/default", "a").write(timestamper.stamp + content)
+        writer = open(env.active_timeline, "a").write(timestamper.stamp + content)
         writer.close()
 
     class DynamicShift():
@@ -95,7 +99,7 @@ class timeline():
         'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
         def shift_needed():
-            if len(open("~.config/OpenStatus/network/timeline/default.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
+            if len(open(active_timeline, "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
                 return True
             else:
                 return False
@@ -104,9 +108,9 @@ class timeline():
             'Do archiving here'
             'Always do in a try statement, as the task could of been completed already by someone else.'
             try:
-                os.move("~.config/OpenStatus/network/default.txt", "~.config/openStatus/network/archive/" + datetime.time.hour + "-" + datetime.time.minute + "-" + datetime.time.second + "-" + datetime.date.day + "-" + datetime.date.month + "-" + datetime.date.year)
+                os.move(active_timeline, "~.config/openStatus/network/archive/" + datetime.time.hour + "-" + datetime.time.minute + "-" + datetime.time.second + "-" + datetime.date.day + "-" + datetime.date.month + "-" + datetime.date.year)
                 'Just in-case, create a new timeline.'
-                writer = open("~.config/OpenStatus/network/default.txt", "w").write("")
+                writer = open(active_timeline, "w").write("")
                 writer.close()
                 'If the DynamicShift succeeds, return the error code "0".'
                 return 0
@@ -121,6 +125,7 @@ class timeline():
     motd = motd()
     DynamicShift = DynamicShift()
 
+env = environment()
 info = info()
 user = user()
 timesteamper = timestamper()
