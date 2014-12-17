@@ -7,11 +7,11 @@
 
 ##Roadmap
 
-- [ ] **DynamicShift** - _Archives stream.txt s' that are bigger than 3.4MB._
+- [ ] **DynamicShift** - Archives stream.txt s' that are bigger than **1MB**.
 - [x] **Intergrate mentions** - Intergrate mentions somehow
-- [x] **GetMentionsCount** - _Get the count of mentions a user has had in the current timeline._
+- [x] **GetMentionsCount** - Get the count of mentions a user has had in the current timeline.
 - [x] **GetMentionedLine** - Get the line's content where you were mentioned in.
 - [x] **Intergrate hashtags** - Intergrate hastags somehow
-- [x] **GetHashtagsCount** - _Get the count of hashtags in the current timeline._
+- [x] **GetHashtagsCount** - Get the count of hashtags in the current timeline.
 - [x] **GetHashtagsLine** - Get the line's content where a hashtag was used in.
 - [x] **motd** - Display a motd a.k.a startup message when the OpenStatus client starts.
