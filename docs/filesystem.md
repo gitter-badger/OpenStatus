@@ -14,6 +14,10 @@ Below is a text made diagram made to explain and show the layout of the **OpenSt
 +   --network
 +     --network/default.txt
 +     --network/archive
++
++     --network/.config
++     --network/.config/motd
++     --network/.config/motd/motd.txt
 ````
 
 ###Explanation
