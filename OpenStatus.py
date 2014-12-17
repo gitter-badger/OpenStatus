@@ -2,6 +2,7 @@
 'GNU GPL v3.0 or above - <http://gnu.org/licenses/gpl.txt>'
 
 import datetime
+import os
 
 class info():
     'Methods and funtions related to the OpenStatus backend/library itself.'
@@ -18,7 +19,7 @@ class user():
             'Change the username of the OpenStatus user of the system"s currently logged in user.'
             writer = open("~.config/OpenStatus/config/config.txt", "w").write("name=" + name)
             writer.close()
-            
+
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return open("~.config/OpenStatus/config/config.txt", "r").readline(0).strip("name=")
@@ -93,9 +94,26 @@ class timeline():
 
         'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
-        def check_if_needed():
+        def shift_needed():
             if len(open("~.config/OpenStatus/network/timeline/default.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
-                'Do archiving here'
+                return True
+            else:
+                return False
+
+        def shift():
+            'Do archiving here'
+            'Always do in a try statement, as the task could of been completed already by someone else.'
+            try:
+                os.move("~.config/OpenStatus/network/default.txt", "~.config/openStatus/network/archive/" + datetime.)
+                'Just in-case, create a new timeline.'
+                writer = open("~.config/OpenStatus/network/default.txt", "w").write("")
+                writer.close()
+                'If the DynamicShift succeeds, return the error code "0".'
+                return 0
+            except:
+                'If the DynamicShift fails for some reason, return the error code "1".'
+                return 1
+
     class motd():
         def get_motd():
             return open("~.config/OpenStatus/network/.config/motd/motd.txt", "r").readlines()
