@@ -28,6 +28,7 @@ class user():
                 if "@" + user.get_name() in posts:
                     mentions_count = mentions_count + 1
                     return mentions_count
+
         def get_mentions():
             'Get all the mentions as a list.'
             'Create a counter.'
@@ -37,6 +38,26 @@ class user():
                 if "@" + user.get_name() in posts:
                     return posts
 
+    class hashtags(hashtag):
+        def get_count():
+            'Get the number of posts where the hashtag was used.'
+            'Create a counter.'
+            hashtags_count = 0
+            for posts in timeline.retrieve():
+                if hashtag in posts:
+                    hashtags_count = hashtags_count + 1
+                    return hashtags_count
+
+        def get_hashtags(hashtag):
+            'Get all the mentions as a list.'
+            'Create a counter.'
+            mentions_count = 0
+            for posts in timeline.retrieve():
+                mentions_count = mentions_count + 1
+                if "@" + user.get_name() in posts:
+                    return posts
+
+    hashtags = hashtags()
     name = name()
     mentions = mentions()
 
