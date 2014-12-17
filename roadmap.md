@@ -11,7 +11,7 @@
 - [x] **Intergrate mentions** - Intergrate mentions somehow
 - [x] **GetMentionsCount** - _Get the count of mentions a user has had in the current timeline._
 - [x] **GetMentionedLine** - Get the line's content where you were mentioned in.
-- [ ] **Intergrate hashtags** - Intergrate hastags somehow
-- [ ] **GetHashtagsCount** - _Get the count of hashtags in the current timeline._
-- [ ] **GetHashtagsLine** - Get the line's content where a hashtag was used in.
+- [x] **Intergrate hashtags** - Intergrate hastags somehow
+- [x] **GetHashtagsCount** - _Get the count of hashtags in the current timeline._
+- [x] **GetHashtagsLine** - Get the line's content where a hashtag was used in.
 - [ ] **motd** - Display a motd a.k.a startup message when the OpenStatus client starts.
