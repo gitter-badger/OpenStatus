@@ -9,9 +9,8 @@ OpenStatus backend written in Python.
 
 ###Whitepapers
 
-####1. [OpenStatus FileSystem](https://github.com/OpenStatus/OpenStatus/blob/master/docs/filesystem.md) - _The storage layout of OpenStatus._
-####2. [DynamicShift](https://github.com/OpenStatus/OpenStatus/blob/master/docs/dynamic-shift.md) - _Network health component._
-####1. [OpenStatus FileSystem](http://git.io/7CDGWg) - _The storage layout of OpenStatus._
+1. [OpenStatus FileSystem](https://github.com/OpenStatus/OpenStatus/blob/master/docs/filesystem.md) - _The storage layout of OpenStatus._
+2. [DynamicShift](https://github.com/OpenStatus/OpenStatus/blob/master/docs/dynamic-shift.md) - _Network health component._
 
 ###Terminlology
 
