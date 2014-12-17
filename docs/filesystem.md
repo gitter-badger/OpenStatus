@@ -33,4 +33,4 @@ Below we explain the above diagram.
 3. The file placed in `--config` named `config.txt` holds the user=specific configuration, such as the user's chosen username.
 4. The sub-directory `--network` is a sub-directory of `.config/OpenStatus`, it holds all the network files that are getting synced by [**Syncthing**](http://syncthing.net) to your machine.
 5. The file placed in `--network` named `default.txt` holds the currently active/default timeline of the network.
-6. The sub-directory placed in `--network`is a sub-directory of `.config/OpenStatus`, its directory is named `archive`, it holds all of the archived timelines that were archived by [**DynamicShift**]().
+6. The sub-directory placed in `--network`is a sub-directory of `.config/OpenStatus`, its directory is named `archive`, it holds all of the archived timelines that were archived by [**DynamicShift**](https://github.com/OpenStatus/OpenStatus/blob/master/docs/dynamic-shift.md).
