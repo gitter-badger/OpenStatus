@@ -18,6 +18,7 @@ class user():
             'Change the username of the OpenStatus user of the system"s currently logged in user.'
             writer = open("~.config/OpenStatus/config/config.txt", "w").write("name=" + name)
             writer.close()
+            
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return open("~.config/OpenStatus/config/config.txt", "r").readline(0).strip("name=")
