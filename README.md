@@ -7,4 +7,4 @@ OpenStatus backend written in Python.
 
 ##Manifestos
 
-####1. [OpenStatus FileSystem](http://git.io/YW-qSQ) - _The storage layout of OpenStatus._
+####1. [OpenStatus FileSystem](http://git.io/7CDGWg) - _The storage layout of OpenStatus._
