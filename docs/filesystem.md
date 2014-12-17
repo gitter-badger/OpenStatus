@@ -1,6 +1,10 @@
 OpenStatus FileSystem
 ====
 
+##Overview
+
+In OpenStatus there is no server as you would think in traditional social-networks like Twitter and Facebook or Instant Messaging services like AIM and ICQ. The files get synced down using Syncthing and from there you are just doing simple but awesome file manipulations.
+
 ##Layout
 
 ###Diagram
