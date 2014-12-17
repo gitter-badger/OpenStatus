@@ -9,6 +9,8 @@ class info():
         return "1.0.0.0"
 
 class user():
+    'Classes to do with the user.'
+    
     class name():
         'Methods and funtions related to operating with the OpenStatus user"s username.'
 
@@ -19,7 +21,10 @@ class user():
         def get_name():
             'Get the username of the OpenStatus user of the system"s currently logged in user.'
             return open("~.config/OpenStatus/config/config.txt", "r").readline(0).strip("name=")
+
     class mentions():
+        'Funtions related to operating with the mentions system.'
+
         def get_count():
             'Get the number of mentions.'
             'Create a counter.'
@@ -39,6 +44,8 @@ class user():
                     return posts
 
     class hashtags(hashtag):
+        'Funtions related to operating with the hashtagging system.'
+
         def get_count():
             'Get the number of posts where the hashtag was used.'
             'Create a counter.'
