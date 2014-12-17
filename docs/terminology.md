@@ -7,3 +7,5 @@ Below is a list of all the OpenStatus terminology.
 **DynamicShift** - Archiving system that archives files equal to or sometimes over the size of **1MB**.
 
 **OpenStatus FileSystem** - The file structure of OpenStatus.
+
+**motd** - A message displayed on connection to the network filesystem.
