@@ -1,9 +1,9 @@
 ##Software
 
 * **OpenStatus** - _The backend/API for OpenStatus._
-* **OpenStatus-client** - _The frontend for the OpenStatus backend/API._
-* **OpenStatus** - _The backend/API for OpenStatus._
-* **Syncthing** - _The Syncing System._
+* **OpenStatus-client** - _The console-based frontend for the OpenStatus backend/API._
+* **OpenStatus-web** - _The read-only web-based frontend for the OpenStatus backend/API._
+* [**Syncthing**](https://syncthing.net) - _The Syncing System._
 
 ##Roadmap
 
