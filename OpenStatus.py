@@ -89,13 +89,17 @@ class timeline():
 
     class DynamicShift():
         'Methods related to operating with the Dynamic-Shift system.'
-        
+
         'Put integer here containing the heap size not in disk size space but in lenghth of cahracters.'
         heap_size = 0
         def check_if_needed():
             if len(open("~.config/OpenStatus/network/timeline/default.txt", "r").read()) == heap_size or len(open("~.config/OpenStatus/stream/stream.txt", "r").read()) > heap_size:
                 'Do archiving here'
+    class motd():
+        def get_motd():
+            return open("~.config/OpenStatus/network/.config/motd/motd.txt", "r").readlines()
 
+    motd = motd()
     DynamicShift = DynamicShift()
 
 info = info()
