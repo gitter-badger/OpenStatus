@@ -1,6 +1,8 @@
 ![](https://cdn0.iconfinder.com/data/icons/octicons/1024/gear-64.png) [OpenStatus](http://openstatus.github.io)
 ==========
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OpenStatus/OpenStatus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/OpenStatus/OpenStatus.svg)](https://travis-ci.org/OpenStatus/OpenStatus)
 
 OpenStatus backend written in Python.
