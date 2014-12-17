@@ -51,10 +51,10 @@ class user():
         def get_hashtags(hashtag):
             'Get all the mentions as a list.'
             'Create a counter.'
-            mentions_count = 0
+            hashtags_count = 0
             for posts in timeline.retrieve():
-                mentions_count = mentions_count + 1
-                if "@" + user.get_name() in posts:
+                hashtags_count = hashtags_count + 1
+                if hashtag in posts:
                     return posts
 
     hashtags = hashtags()
