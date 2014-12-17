@@ -14,4 +14,4 @@
 - [x] **Intergrate hashtags** - Intergrate hastags somehow
 - [x] **GetHashtagsCount** - _Get the count of hashtags in the current timeline._
 - [x] **GetHashtagsLine** - Get the line's content where a hashtag was used in.
-- [ ] **motd** - Display a motd a.k.a startup message when the OpenStatus client starts.
+- [x] **motd** - Display a motd a.k.a startup message when the OpenStatus client starts.
