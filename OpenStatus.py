@@ -104,7 +104,7 @@ class timeline():
             'Do archiving here'
             'Always do in a try statement, as the task could of been completed already by someone else.'
             try:
-                os.move("~.config/OpenStatus/network/default.txt", "~.config/openStatus/network/archive/" + datetime.)
+                os.move("~.config/OpenStatus/network/default.txt", "~.config/openStatus/network/archive/" + datetime.time.hour + "-" + datetime.time.minute + "-" + datetime.time.second + "-" + datetime.date.day + "-" + datetime.date.month + "-" + datetime.date.year)
                 'Just in-case, create a new timeline.'
                 writer = open("~.config/OpenStatus/network/default.txt", "w").write("")
                 writer.close()
