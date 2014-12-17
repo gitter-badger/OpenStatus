@@ -43,25 +43,25 @@ class user():
                 if "@" + user.get_name() in posts:
                     return posts
 
-    class hashtags(hashtag):
+    class hashtags():
         'Funtions related to operating with the hashtagging system.'
 
-        def get_count():
+        def get_count(hashtag):
             'Get the number of posts where the hashtag was used.'
             'Create a counter.'
             hashtags_count = 0
             for posts in timeline.retrieve():
-                if user.hashtags.hashtag in posts:
+                if hashtag in posts:
                     hashtags_count = hashtags_count + 1
                     return hashtags_count
 
-        def get_hashtags(user.hashtags.hashtag):
+        def get_hashtags(hashtag):
             'Get all the mentions as a list.'
             'Create a counter.'
             hashtags_count = 0
             for posts in timeline.retrieve():
                 hashtags_count = hashtags_count + 1
-                if user.hashtags.hashtag in posts:
+                if hashtag in posts:
                     return posts
 
     hashtags = hashtags()
