@@ -1,8 +1,8 @@
 ##Software
 
-* **OpenStatus** - _The backend/API for OpenStatus._
-* **OpenStatus-client** - _The console-based frontend for the OpenStatus backend/API._
-* **OpenStatus-web** - _The read-only web-based frontend for the OpenStatus backend/API._
+* [**OpenStatus**](https://github.com/OpenStatus/OpenStatus) - _The backend/API for OpenStatus._
+* [**OpenStatus-client**](https://github.com/OpenStatus/OpenStatus-Client) - _The console-based frontend for the OpenStatus backend/API._
+* [**OpenStatus-web**](https://github.com/OpenStatus/OpenStatus-web) - _The read-only web-based frontend for the OpenStatus backend/API._
 * [**Syncthing**](https://syncthing.net) - _The Syncing System._
 
 ##Roadmap
@@ -23,13 +23,10 @@
 ####OpenStaus-Client (The frontend to the backend/API/library)
 
 - [ ] Put stuff here
-- 
 
 ####OpenStatus-web (The read-only web-frontend to the backend/API/library)
 
 - [ ]
-- 
-
 
 ###OS support
 
